@@ -6,11 +6,13 @@ import Register from './pages/authentication/Register';
 import Login from './pages/authentication/Login';
 import Room from './pages/room/Room';
 import Home from './pages/home/Home';
+import Navbar from './components/navbar/Navbar';
 
 
 const App = () => {
   return (
     <Router>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
