@@ -10,12 +10,13 @@
     flex-direction: column;
 }
 .home-title{
-    color: blue;
+    color: white;
     font-size: 45px;
     font-weight: 700;
     text-decoration: underline;
     text-transform: uppercase;
     text-align: center;
+    text-shadow: #343434;
 }
 .home-container{
     width: 50%;
