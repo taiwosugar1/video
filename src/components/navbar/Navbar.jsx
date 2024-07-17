@@ -3,7 +3,14 @@ import "./Navbar.css"
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <div className='navbar'>
+        <header>
+            <h3>MULTIBRAND DIGITAL SERVICES</h3>
+            <ul>
+                <li>Contact Us</li>
+            </ul>
+        </header>
+    </div>
   )
 }
 

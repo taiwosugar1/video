@@ -3,6 +3,8 @@ import "./Room.css"
 import { useParams } from 'react-router-dom'
 import { ZegoUIKitPrebuilt } from '@zegocloud/zego-uikit-prebuilt';
 import { APP_ID, SECRET_KEY } from '../../config';
+import Navbar from '../../components/navbar/Navbar';
+
 
 const Room = () => {
   const { roomId } = useParams();
@@ -62,8 +64,11 @@ const Room = () => {
   }, [participantCount]);
 
   return (
-    
+    <div className='room-container'>
+        <Navbar/>
+
     <div ref={videoContainerRef} className='room'>
+    </div>
     </div>
   );
 };
