@@ -42,7 +42,7 @@ const Login = () => {
         />
         <button className="auth-button" onClick={handleLogin}>Login</button>
       </div>
-      <p> Already have an account ? <Link to="/register">Register</Link></p>
+      <p> Dont have an account ? <Link to="/register">Register</Link></p>
     </div>
   );
 };
