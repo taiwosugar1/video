@@ -16,7 +16,7 @@
     text-decoration: underline;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: #343434;
+    text-shadow: 2px 2px 5px rgba( 70, 239, 239, .8);
 }
 .home-container{
     width: 50%;
@@ -40,6 +40,12 @@
     margin: 10px;
     border-radius: 5px;
     border: 1px solid grey;
+}
+.home-subtitle{
+    color: aqua;
+    text-align: center;
+    font-size: 25px;
+    width: 450px;
 }
 
 .generate-button{
