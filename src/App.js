@@ -14,11 +14,11 @@ const App = () => {
   return (
     <Router>
       <Navbar/>
-      <a href='tel: +1-614-707-6245'>
+      <a href='tel: +234-802-929-9901'>
                  <div className='side-box'>
                     <h6><FaPhone/><br/> Diamond</h6>
                 </div> </a>
-                <a href='https://wa.me/message/NL7UY3M3Q6ZOG1'> 
+                <a href='https://wa.me/2348029299901'> 
                   <div className='side-box2'>
                     <h6><FaWhatsapp/><br/>Book Now</h6> 
                 </div></a>
