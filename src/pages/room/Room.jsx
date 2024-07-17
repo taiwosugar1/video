@@ -39,7 +39,7 @@ const Room = () => {
   },[]);
 
   return (
-    <div ref={videoContainerRef}>
+    <div ref={videoContainerRef} className='room'>
       
     </div>
   )

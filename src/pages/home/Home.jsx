@@ -28,10 +28,11 @@ const handleGroupCall = () => {
 }
 
   return (
-    <div>
+    <div className='home'>
       <div className="home-container">
         <div className="home-content">
-            <h1 className="home-title">Wecome to Video Calling App</h1>
+            <h1 className="home-title">Wecome to <b>Multibrand</b> <br/>
+            Video Calling App</h1>
             <p className="home-subtitle">start a video call with a randomly generated room ID</p>
             <div className='room-id-container'>
                 <input type="text" 
