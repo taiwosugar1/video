@@ -35,8 +35,8 @@ const Room = () => {
   }
 
   useEffect(()=>{
-    myMeeting();
-  },[]);
+   myMeeting();
+  },[ ]);
 
   return (
     <div ref={videoContainerRef} className='room'>

@@ -1,22 +1,24 @@
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/home/Home';
-import Navbar from './components/navbar/Navbar';
+import Register from './pages/authentication/Register';
+import Login from './pages/authentication/Login';
 import Room from './pages/room/Room';
+import Home from './pages/home/Home';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Navbar/>
-        <Routes>
-           <Route path="/" exact element={<Home/>}/>
-           <Route path="/room/:roomId" element={<Room/>}/>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/room/:roomId" element={<Room />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
