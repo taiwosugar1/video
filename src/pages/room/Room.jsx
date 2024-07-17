@@ -62,9 +62,8 @@ const Room = () => {
   }, [participantCount]);
 
   return (
-    <div className='room-container'>
+    
     <div ref={videoContainerRef} className='room'>
-    </div>
     </div>
   );
 };
