@@ -14,13 +14,19 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={ 
+
+        <Route path="/home" element={ 
           <ProtectedRoute>
             <Home />
           </ProtectedRoute>} />
+
         <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/room/:roomId" element={<Room />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/room/:roomId" element={
+        <ProtectedRoute>
+          <Room />
+         </ProtectedRoute> } />
+       
       </Routes>
     </Router>
   );

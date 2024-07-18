@@ -3,16 +3,19 @@ import React, { useState } from 'react';
 import { auth } from '../../firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import './Auth.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleRegister = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       alert('Registration successful');
+      navigate('/');
+
     } catch (error) {
       alert(error.message);
     }
@@ -41,7 +44,7 @@ const Register = () => {
         <button className="auth-button" onClick={handleRegister}>Register</button>
       </div>
       
-      <p> Already have an account ? <Link to="/login">Login</Link></p>
+      <p> Already have an account ? <Link to="/">Login</Link></p>
 
     </div>
   );
