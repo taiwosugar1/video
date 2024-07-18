@@ -6,6 +6,7 @@ import Register from './pages/authentication/Register';
 import Login from './pages/authentication/Login';
 import Room from './pages/room/Room';
 import Home from './pages/home/Home';
+import ProtectedRoute from './pages/authentication/ProtectedRoute';
 
 
 
@@ -13,7 +14,10 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={ 
+          <ProtectedRoute>
+            <Home />
+          </ProtectedRoute>} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/room/:roomId" element={<Room />} />
