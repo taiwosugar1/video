@@ -12,7 +12,7 @@ const Room = () => {
   useEffect(() => {
     if (!isRoomIdValid(roomId)) {
       alert("Room ID is no longer valid. Please generate a new one.");
-      return;
+      return("/")
     }
     myMeeting();
   }, []);
