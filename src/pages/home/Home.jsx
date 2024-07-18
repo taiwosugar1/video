@@ -1,20 +1,11 @@
 // src/components/Home.js
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import "./Home.css";
 import { useNavigate } from 'react-router-dom';
-import { auth } from '../../firebase';
-import { onAuthStateChanged } from 'firebase/auth';
 
 const Home = () => {
   const [roomId, setRoomId] = useState('');
   const navigate = useNavigate();
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (!user) {
-        navigate('/login');
-      }
-    });
-  }, [navigate]);
 
   const handleRoomIdGenerate = () => {
     const randomId = Math.random().toString(36).substring(2, 9);
