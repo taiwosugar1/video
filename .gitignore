@@ -3,6 +3,9 @@
 # .gitignore
 .env
 
+# .gitignore
+/config
+
 # dependencies
 /node_modules
 /.pnp
